@@ -1,0 +1,291 @@
+.face{
+    width: 140px;
+    height: 120px;
+    border-radius: 80px 80px 50px 50px;
+    
+    background-color: whitesmoke;
+    z-index: 10px;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+.inner{
+    width: 110px;
+    height: 70px;
+    border-radius: 80px 80px 50px 50px;
+    
+    background-color: rgb(20, 1, 1);
+    margin-left: 15px;
+    margin-top: 28px;
+    position: absolute;
+
+}
+.body{
+    width: 130px;
+    height: 180px;
+    background-color: whitesmoke;
+    margin-top: 150px;
+    position: absolute;
+    border-radius: 0% 0% 980% 980%;
+    /* border-bottom-left-radius: 90%; */
+    /* border-bottom-left-radius: 90px ; */
+    
+    margin-left: 50px;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    animation: moveto 3s infinite;
+    margin-bottom: 546px;
+    
+    
+}
+@keyframes moveto {
+    0%{
+        margin-top: px;
+    }
+    25%{
+        
+    }
+    
+}
+
+@keyframes movehand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    20%{
+        transform: rotate(20deg);
+        transform-origin: top center;
+
+    }
+    40%{
+        transform: rotate(40deg);
+        transform-origin: top center;
+    }
+    60%{
+        transform: rotate(60deg);
+        transform-origin: top center;
+    } 
+    80%{
+        transform: rotate(80deg);
+        transform-origin: top center;
+
+    }
+    
+}
+@keyframes moveeye{
+    0%{
+        height: 30px;
+    }
+    20%{
+        height: 25px ;
+    }
+    40%{
+        height: 20px;
+    }
+    60%{
+        height: 15px;
+
+    }
+    80%{
+        height: 7px;
+
+    }
+    100%{
+        height: 30px;
+    }
+}
+
+.eye1{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    background-color: aqua;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 50%;
+    animation: moveeye  2.6s infinite;
+}
+.eye2{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    background-color: aqua;
+    margin-top: -1px;
+    margin-left: 30px;
+    border-radius: 50%;
+    animation: moveeye 2.6s infinite;
+    
+}
+.robot{
+    position: relative;
+    left: 500px;
+}
+.eye1:hover{
+    /* transform: rotate(30deg); */
+}
+.hand1{
+    width: 25px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    margin-top: 150px;
+    border-radius: 50px 0px 50px 50px;
+    animation: movehand 2.6s infinite;
+    margin-left: 10px;
+    
+    
+}
+body{
+    background-color: rgba(79, 62, 95, 0.692);
+}
+.hand2{
+    width: 25px;
+    height: 100px;
+    background-color: whitesmoke;
+    margin-top: 150px;
+    border-radius: 0px 50px 50px 50px;
+    margin-left: 200px;
+    margin-bottom: -150px;
+    position: absolute;
+    animation: movehand2 2.6s infinite;
+}
+@keyframes movehand2 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    20%{
+        transform: rotate(-30deg);
+        transform-origin: top center;
+
+    }
+    40%{
+        transform: rotate(-40deg);
+        transform-origin: top center;
+    }
+    60%{
+        transform: rotate(-50deg);
+        transform-origin: top center;
+    }
+    80%{
+        transform: rotate(-60deg);
+        transform-origin: top center;
+    }
+    100%{
+
+    } 
+    
+}
+.eye1:hover{
+    height: 10px;
+}
+.eye2:hover{
+    height: 10px;
+}
+.border{
+    width: 20px;
+    height: 10px;
+    background-color: rgb(245, 97, 183);
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 45%;
+    position: absolute;
+    animation: movepink 2.6s infinite;
+
+}
+.border2{
+    width: 20px;
+    height: 10px;
+    background-color: rgb(245, 97, 183);
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 8%;
+    position: absolute;
+    animation: movepink2 2.6s infinite;
+
+}
+@keyframes movepink {
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: black;
+    }
+    40%{
+        background-color: black;
+    }
+    60%{
+        background-color: black;
+    }
+    80%{
+        background-color: black ;
+    }
+    100%{
+        background-color:rgb(245, 97, 183) ;
+    }
+    
+    
+    
+}
+@keyframes movepink2 {
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: black;
+    }
+    40%{
+        background-color: black;
+    }
+    60%{
+        background-color: black;
+    }
+    80%{
+        background-color: black ;
+    }
+    100%{
+        background-color:rgb(245, 97, 183) ;
+    }
+    
+    
+    
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+}
+.upper{
+    animation: moveup 3s infinite;
+}
+@keyframes moveup {
+    0%{
+        margin-bottom: 0px;
+    }
+    20%{
+        margin-bottom: 5px ;
+    }
+    
+}
+/* .robot{
+    animation: moveto 3s infinite ;
+
+}
+@keyframes moveto {
+    0%{
+        margin-bottom: 5px;
+    }
+    
+} */
+
+
+
+
